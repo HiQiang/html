@@ -4,9 +4,9 @@
 }
 .w {
     width: 1200px;
-    /* height: 10px; */
     margin: auto;
     background-color: pink;
+    text-align: center;
 }
 body {
     background-color: #f3f5f7;
@@ -34,7 +34,6 @@ a {
 }
 .nav {
     float:left;
-    /* margin-top: 15px; */
     background-color: skyblue;
 }
 .nav ul li {
@@ -49,10 +48,41 @@ a {
     font-size: 18px;
     color: #050505;   
 }
-
-
 .nav ul li a:hover {
     border-bottom: 2px solid #00a4ff;
     color: #00a4ff;
 }
+.search {
+    float:right;
+    width: 412px;
+    height: 42px;
+    /* margin-left: 15px; */
+    background-color: skyblue;
+}
 
+.search input{
+    float:left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid pink;
+    border-right: 0;
+    color:#bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.search a button {
+    float: left;
+    width: 51px;
+    height: 42px;
+    /* 按钮button默认有个边框需要我们手动去掉 */
+    border: 1px solid pink;
+    background: url(../images/btn.png);
+}
+.Husky {
+    position: fixed;
+    /* 1. 走浏览器宽度的一半 */
+    right: 50%;
+    /* 2. 利用margin 走版心盒子宽度的一半距离 */
+    margin-right: 605px;
+    top:40px;
+}
