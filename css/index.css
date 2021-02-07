@@ -8,6 +8,29 @@
     background-color: pink;
     text-align: center;
 }
+
+/* 字体声明 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?tibd2x');
+    src: url('fonts/icomoon.eot?tibd2x#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?tibd2x') format('truetype'),
+        url('fonts/icomoon.woff?tibd2x') format('woff'),
+        url('fonts/icomoon.svg?tibd2x#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.homeicon {
+    font-family: 'icomoon';
+    vertical-align:-2px;
+}
+span {
+    font-family: 'icomoon';
+
+}
+
 body {
     background-color: #f3f5f7;
 }
@@ -54,18 +77,20 @@ a {
 }
 .search {
     float:right;
-    width: 412px;
+    width: 396px;
     height: 42px;
     /* margin-left: 15px; */
     background-color: skyblue;
+
 }
 
 .search input{
     float:left;
     width: 345px;
-    height: 40px;
+    height: 42px;
     border: 1px solid pink;
     border-right: 0;
+    outline: none;
     color:#bfbfbf;
     font-size: 14px;
     padding-left: 15px;
@@ -85,4 +110,8 @@ a {
     /* 2. 利用margin 走版心盒子宽度的一半距离 */
     margin-right: 605px;
     top:40px;
+    cursor:not-allowed;
+}
+.w p:nth-child(even) {
+    background-color: skyblue;
 }
